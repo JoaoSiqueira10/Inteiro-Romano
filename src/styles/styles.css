@@ -1,0 +1,88 @@
+:root{
+  --background: #222831;
+  --text: #DDDDDD;
+  --primary: #30475E;
+  --accent: #F05454;
+}
+
+*{
+  background-color: var(--background);
+  font-family: 'Anek Telugu', sans-serif;
+  color: var(--text);
+}
+
+main{
+  display: grid;
+  place-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  width: 600px;
+  height: fit-content;
+  padding: 48px;
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+}
+
+form{
+  width: 100%;
+}
+
+.container-main-input{
+  width: 100%;
+  margin: 8px auto;
+  display: flex;
+  gap: 8px;
+}
+
+.main-input{
+  width: 100%;
+  padding: 16px 16px 10px;
+  font-size: 20px;
+  background-color: var(--primary);
+  border: none;
+  border-radius: 4px;
+}
+
+.main-input::placeholder{
+  color: var(--text);
+  font-size: 20px;
+  opacity: .5;
+}
+
+.container-options{
+  display: flex;
+  gap: 32px;
+}
+
+button{
+  padding: 16px 20px;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  color: var(--accent);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: .3s;
+}
+
+button:hover{
+  background: var(--accent);
+  color: var(--text);
+}
+
+.container-result{
+  width: 100%;
+  margin: 40px 0 16px;
+}
+
+.container-result > p{
+  min-height: 50px;
+  display: flex;
+  padding: 24px 16px;
+  background-color: var(--primary);
+  border-radius: 8px;
+  color: var(--text);
+  font-size: 20px;
+}

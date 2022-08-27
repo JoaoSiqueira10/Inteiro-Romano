@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/styles/styles.css" />
+
+  <title>Tarefa01</title>
+</head>
+<body>
+  <main>
+    <div class="container">
+      <h1>Conversor</h1>
+      <form>
+        <div class="container-main-input">
+          <input id="inputText" placeholder="Digite aqui..." class="main-input" />
+          <button id="converterBotao">Converter</button>
+        </div>
+        <div class="container-options">
+            <div>              
+              <input type="radio" name="notify" value="RomanoArabico" id="romanoArabico" >Romano para Arabico&nbsp;&nbsp;
+              <input type="radio" name="notify" value="ArabicoRomano" id="arabicoRomano" >Arábico para romano&nbsp;&nbsp;            
+            </div>
+        </div>
+      </form>
+      <div class="container-result">
+        <h3>Resultado</h3>
+        <p id="result"></p>
+      </div>
+    </div>
+  </main>
+  <script src = "src/js/script.js"></script>
+</body>
+</html>
